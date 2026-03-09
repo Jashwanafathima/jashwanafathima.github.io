@@ -5,82 +5,158 @@
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
-background:#f5f7fa;
-color:#333;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* PARTICLE BACKGROUND */
+
+#particles{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:radial-gradient(circle,#0f172a,#020617);
 }
 
 /* HEADER */
 
 header{
-background:#0f766e;
-padding:30px;
 text-align:center;
-color:white;
+padding:80px 20px;
 }
 
-/* SIDEBAR */
-
-.sidebar{
-position:fixed;
-left:0;
-top:0;
-width:200px;
-height:100%;
-background:#134e4a;
-padding-top:150px;
+header h1{
+font-size:48px;
 }
 
-.sidebar a{
-display:block;
-color:white;
-padding:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.sidebar a:hover{
-background:#0f766e;
-}
-
-/* MAIN CONTENT */
-
-.container{
-margin-left:220px;
-padding:40px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:8px;
-margin-top:20px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#0f766e;
-}
-
-.project{
-margin-top:15px;
-padding:15px;
-background:#ecfeff;
-border-radius:6px;
-}
-
-ul{
+.typing{
+color:#38bdf8;
+font-size:22px;
 margin-top:10px;
 }
 
-footer{
-margin-top:40px;
-padding:20px;
+/* NAV */
+
+nav{
 text-align:center;
-background:#0f766e;
+margin-bottom:40px;
+}
+
+nav a{
+margin:0 18px;
 color:white;
+text-decoration:none;
+font-weight:bold;
+padding:8px 14px;
+border-radius:6px;
+transition:.3s;
+}
+
+nav a:hover{
+background:#38bdf8;
+color:black;
+}
+
+/* CONTAINER */
+
+.container{
+width:85%;
+margin:auto;
+}
+
+/* SECTIONS */
+
+section{
+margin-bottom:60px;
+}
+
+h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+/* CARD */
+
+.card{
+background:#0f172a;
+padding:25px;
+border-radius:10px;
+border:1px solid #1e293b;
+}
+
+/* TERMINAL BOX */
+
+.terminal{
+background:black;
+padding:20px;
+border-radius:8px;
+font-family:monospace;
+color:#22c55e;
+}
+
+/* SKILL BARS */
+
+.skill{
+margin-top:15px;
+}
+
+.bar{
+background:#1e293b;
+height:10px;
+border-radius:6px;
+margin-top:6px;
+}
+
+.fill{
+background:#38bdf8;
+height:10px;
+border-radius:6px;
+}
+
+/* PROJECT */
+
+.project{
+margin-top:20px;
+padding:20px;
+border-radius:10px;
+background:#0f172a;
+border:1px solid #1e293b;
+transition:.3s;
+}
+
+.project:hover{
+box-shadow:0 0 15px #38bdf8;
+}
+
+.button{
+display:inline-block;
+margin-top:10px;
+padding:8px 14px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
 }
 
 </style>
@@ -88,137 +164,185 @@ color:white;
 
 <body>
 
+<div id="particles"></div>
+
 <header>
-<h1>Jashwana Fathima</h1>
-<p>Cybersecurity Enthusiast | SOC Analyst | Blue Team</p>
+
+<h1>Jashwana Fathima S</h1>
+<div class="typing" id="typing"></div>
+
 </header>
 
-<!-- SIDEBAR MENU -->
-
-<div class="sidebar">
+<nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#certifications">Certification</a>
 <a href="#contact">Contact</a>
-</div>
-
-<!-- MAIN CONTENT -->
+</nav>
 
 <div class="container">
 
 <section id="about">
+
 <h2>About Me</h2>
-<div class="card">
-Computer Science Engineering student with a strong interest in cybersecurity, SOC operations, and threat detection. Experienced in analyzing Linux system logs, monitoring security events, and understanding network traffic to identify potential security incidents.
+
+<div class="terminal">
+
+> Initializing Security Analyst Profile...  
+> Name: Jashwana Fathima S  
+> Role: Cybersecurity Enthusiast  
+> Focus: SOC Monitoring | Threat Detection | Log Analysis  
+> Status: Ready to defend systems against cyber threats.
+
 </div>
+
 </section>
 
 <section id="skills">
+
 <h2>Technical Skills</h2>
+
 <div class="card">
 
-<b>Programming & Scripting</b>
-<ul>
-<li>Java</li>
-<li>SQL</li>
-<li>Bash</li>
-</ul>
+<div class="skill">
+Java
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
 
-<b>Networking</b>
-<ul>
-<li>TCP/IP</li>
-<li>DNS</li>
-<li>HTTP/HTTPS</li>
-<li>SSH</li>
-</ul>
+<div class="skill">
+Networking
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
 
-<b>Cybersecurity</b>
-<ul>
-<li>Log Analysis</li>
-<li>Threat Detection</li>
-<li>Incident Response Basics</li>
-<li>SIEM Fundamentals</li>
-</ul>
+<div class="skill">
+Linux
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
 
-<b>Tools</b>
-<ul>
-<li>Wireshark</li>
-<li>Kali Linux</li>
-<li>VirtualBox</li>
-<li>Git</li>
-</ul>
+<div class="skill">
+Cybersecurity Concepts
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
 
 </div>
+
 </section>
 
 <section id="projects">
+
 <h2>Cybersecurity Projects</h2>
 
-<div class="card">
-
 <div class="project">
+
 <b>Linux Log Analyzer and Security Monitoring</b>
+
 <ul>
-<li>Analyzed Linux system logs to detect SSH brute-force attempts.</li>
-<li>Implemented automated log monitoring using Bash scripts.</li>
-<li>Detected suspicious login activity and authentication failures.</li>
-<li>Simulated basic SOC security monitoring.</li>
+<li>Detected SSH brute-force attacks using Linux log analysis.</li>
+<li>Automated monitoring using Bash scripts.</li>
+<li>Identified suspicious authentication attempts.</li>
 </ul>
+
+<a class="button" href="https://github.com/Jashwanafathima" target="_blank">View Code</a>
+
 </div>
 
 <div class="project">
+
 <b>Network Traffic Analysis and Packet Sniffing</b>
+
 <ul>
-<li>Developed a packet sniffer using Java and the Pcap4J library.</li>
-<li>Captured and analyzed real-time network packets.</li>
-<li>Examined TCP/IP packet structures and network communication.</li>
-<li>Validated captured traffic using Wireshark.</li>
+<li>Built packet sniffer using Java and Pcap4J.</li>
+<li>Captured real-time network packets.</li>
+<li>Analyzed TCP/IP traffic and validated with Wireshark.</li>
 </ul>
+
+<a class="button" href="https://github.com/Jashwanafathima" target="_blank">View Code</a>
+
 </div>
 
 <div class="project">
+
 <b>SentinelX – Mini SOC Platform</b>
+
 <ul>
-<li>Built a web-based security monitoring dashboard.</li>
-<li>Implemented log visualization and alert filtering.</li>
-<li>Detected failed login attempts and suspicious activities.</li>
+<li>Web dashboard for security monitoring.</li>
+<li>Log visualization and alert filtering.</li>
 <li>Simulated SIEM-style SOC monitoring.</li>
 </ul>
-</div>
+
+<a class="button" href="https://github.com/Jashwanafathima" target="_blank">View Code</a>
 
 </div>
+
 </section>
 
 <section id="certifications">
+
 <h2>Certification</h2>
+
 <div class="card">
+
 <b>Red Hat Certified System Administrator (RHCSA)</b>
+
 <ul>
 <li>Certification ID: 250-048-733</li>
-<li>Achieved a centum score demonstrating strong proficiency in Linux system administration.</li>
-<li>Hands-on experience in user management, file permissions, system services, and Linux security configuration.</li>
-<li>Strong foundation in Linux environments used in enterprise and cybersecurity operations.</li>
+<li>Achieved centum score demonstrating Linux administration expertise.</li>
+<li>Hands-on skills in Linux users, permissions, and system services.</li>
 </ul>
+
 </div>
+
 </section>
 
 <section id="contact">
+
 <h2>Contact</h2>
+
 <div class="card">
+
 <ul>
+
 <li>Email: jashwanafathima007@gmail.com</li>
-<li>LinkedIn: https://www.linkedin.com/in/jashwana-fathima-s-/</li>
-<li>GitHub: https://github.com/Jashwanafathima</li>
+
+<li>LinkedIn:  
+https://www.linkedin.com/in/jashwana-fathima-s-/</li>
+
+<li>GitHub:  
+https://github.com/Jashwanafathima</li>
+
 </ul>
+
 </div>
+
 </section>
 
 </div>
 
 <footer>
+
 © 2026 Jashwana Fathima S | Portfolio
+
 </footer>
+
+<script>
+
+/* TYPING ANIMATION */
+
+const text="SOC Analyst | Threat Detection | Blue Team";
+let i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,60);
+}
+}
+
+typing();
+
+</script>
 
 </body>
 </html>
