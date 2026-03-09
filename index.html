@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jashwana Fathima | Portfolio</title>
+<title>Jashwana Fathima | Cybersecurity Portfolio</title>
 
 <style>
 
 body{
 font-family: Arial;
+margin:0;
 background:#0f172a;
 color:white;
-margin:40px;
 }
 
-h1{
+header{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+header h1{
 color:#38bdf8;
+font-size:36px;
 }
 
-.section{
+nav{
+text-align:center;
+padding:15px;
+background:#1e293b;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+width:80%;
+margin:auto;
 margin-top:40px;
 }
 
 .card{
 background:#1e293b;
 padding:20px;
-margin-top:10px;
 border-radius:8px;
+margin-top:20px;
+}
+
+h2{
+color:#38bdf8;
+}
+
+.project{
+margin-top:15px;
+padding:15px;
+background:#020617;
+border-radius:6px;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:#020617;
 }
 
 </style>
@@ -32,61 +72,105 @@ border-radius:8px;
 
 <body>
 
+<header>
 <h1>Jashwana Fathima</h1>
-<p>Cybersecurity Enthusiast | SOC | Blue Team</p>
+<p>Cybersecurity Enthusiast | SOC Analyst | Blue Team</p>
+</header>
 
-<div class="section">
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certification</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
 <h2>About Me</h2>
 <div class="card">
-Computer Science Engineering student interested in cybersecurity, SOC monitoring, log analysis, and threat detection. Experienced in Linux security monitoring and network traffic analysis.
+Computer Science Engineering student passionate about Cybersecurity, Security Operations Center (SOC) monitoring, log analysis, and threat detection. I enjoy analyzing system logs, investigating suspicious activities, and understanding network traffic to detect potential security threats.
 </div>
-</div>
+</section>
 
-<div class="section">
+<section id="skills">
 <h2>Technical Skills</h2>
 <div class="card">
-<b>Programming:</b> Java, SQL, Bash<br>
-<b>Networking:</b> TCP/IP, DNS, HTTP/HTTPS, SSH<br>
-<b>Tools:</b> Wireshark, Kali Linux, VirtualBox, Git<br>
-<b>Cybersecurity:</b> Log Analysis, Threat Detection, SIEM Basics
-</div>
-</div>
 
-<div class="section">
-<h2>Projects</h2>
+<b>Programming & Scripting</b><br>
+Java, SQL, Bash
+
+<br><br>
+
+<b>Networking</b><br>
+TCP/IP, DNS, HTTP/HTTPS, SSH
+
+<br><br>
+
+<b>Cybersecurity Concepts</b><br>
+Log Analysis, Threat Detection, Incident Response, SIEM Basics
+
+<br><br>
+
+<b>Tools</b><br>
+Wireshark, Kali Linux, Oracle VirtualBox, Git
+
+</div>
+</section>
+
+<section id="projects">
+<h2>Cybersecurity Projects</h2>
 
 <div class="card">
+
+<div class="project">
 <b>Linux Log Analyzer and Security Monitoring</b><br>
-Detects SSH brute-force attacks and suspicious login attempts by analyzing Linux system logs using Bash scripts.
+Technologies: Kali Linux, Bash, VirtualBox<br><br>
+Analyzes Linux system logs to detect SSH brute-force attempts and suspicious login activity. Automated monitoring scripts help identify security incidents in real time.
 </div>
 
-<div class="card">
+<div class="project">
 <b>Network Traffic Analysis and Packet Sniffing</b><br>
-Java-based packet sniffer using Pcap4J to capture and analyze network traffic, validated with Wireshark.
+Technologies: Java, Pcap4J, Wireshark<br><br>
+Built a packet sniffer using Java to capture and analyze real-time network traffic. Gained practical understanding of TCP/IP protocols and network forensics.
 </div>
 
-<div class="card">
+<div class="project">
 <b>SentinelX – Mini SOC Platform</b><br>
-Web-based security monitoring dashboard for visualizing security logs and detecting suspicious activities.
+Technologies: React, Spring, MySQL<br><br>
+Developed a web-based security monitoring dashboard to visualize system logs, detect failed login attempts, and simulate basic SOC monitoring capabilities.
 </div>
 
 </div>
+</section>
 
-<div class="section">
+<section id="certifications">
 <h2>Certification</h2>
 <div class="card">
-Red Hat Certified System Administrator (RHCSA)
+Red Hat Certified System Administrator (RHCSA)<br>
+Certification ID: 250-048-733
 </div>
-</div>
+</section>
 
-<div class="section">
+<section id="contact">
 <h2>Contact</h2>
 <div class="card">
-Email: jashwanafathima007@gmail.com<br>
-LinkedIn: https://www.linkedin.com/in/jashwana-fathima-s-/<br>
-GitHub: https://github.com/Jashwanafathima
+Email: jashwanafathima007@gmail.com <br><br>
+
+LinkedIn:<br>
+https://www.linkedin.com/in/jashwana-fathima-s-/ <br><br>
+
+GitHub:<br>
+https://github.com/Jashwanafathima
 </div>
+</section>
+
 </div>
+
+<footer>
+© 2026 Jashwana Fathima | Cybersecurity Portfolio
+</footer>
 
 </body>
 </html>
